@@ -73,7 +73,7 @@ class Common(Configuration):
 
     WSGI_APPLICATION = "web.wsgi.application"
 
-    default_db = "postgres://postgres:postgres@db:5432/mariaquiteria"
+    default_db = "postgres://postgres:mariaquiteriadb@mariaquiteriadb.cxt0v6aml06a.us-east-1.rds.amazonaws.com/mariaquiteria_db"
     DATABASES = {"default": dj_database_url.config(default=default_db)}
 
     AUTH_PASSWORD_VALIDATORS = [
