@@ -47,3 +47,8 @@ variable image {
   type        = string
   description = "Nome da Imagem"
 }
+
+terraform {
+  required_version = ">= 1.0.0"
+
+}
