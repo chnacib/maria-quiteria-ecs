@@ -11,7 +11,7 @@ data "template_file" "container_definitions" {
 }
 
 module "ecs_mentoria" {
-  source           = "git@github.com:mentoriaiac/iac-modulo-aws-ecs.git?ref=main"
+  source           = "git::https://github.com/mentoriaiac/iac-modulo-aws-ecs.git"
   create_cluster   = true
   app_count        = 1
   fargate_cpu      = 256
